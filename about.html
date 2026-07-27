@@ -1,294 +1,96 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>가양 클럽 정보 | 가양 클럽 비교 - 상세정보 & 꿀팁</title>
-    <meta name="description" content="가양 클럽 정보 모음.zip. 입장료부터 주차, 드레스코드까지 다 알려준다. 클럽별 상세 스펙 비교하고 가기 전에 꼭 체크하셈. 010-6279-0862 문의 가능.">
-    <meta name="keywords" content="가양 클럽 정보, 가양 클럽 입장료, 가양 클럽 주차, 가양 클럽 드레스코드, 가양 클럽 상세정보, 가양 클럽 위치, 가양 클럽 영업시간, 가양 클럽 문의">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://gayang-club-info.node-link.shop/about.html">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="가양 클럽 정보 | 가양 클럽 비교">
-    <meta property="og:description" content="가양 클럽 정보 모음.zip. 입장료부터 주차, 드레스코드까지 다 알려준다. 클럽별 상세 스펙 비교하고 가기 전에 꼭 체크하셈.">
-    <meta property="og:url" content="https://gayang-club-info.node-link.shop/about.html">
-    <meta property="og:site_name" content="가양 클럽 비교">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:image" content="https://t3b06-gy-club-cmp.vercel.app/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="가양 클럽 정보 | 가양 클럽 비교">
-    <meta name="twitter:description" content="가양 클럽 정보 모음.zip. 입장료부터 주차, 드레스코드까지 다 알려준다.">
-    <style>
-        /* RESET & BASE */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 18px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background: #1a1a1a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            padding: 1.5rem;
-            min-height: 100vh;
-        }
-        /* typography oversize */
-        h1 {
-            font-size: 4rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.04em;
-            color: #f7ff00;
-            text-shadow: 4px 4px 0 #000, 6px 6px 0 #ff00ff;
-            margin-bottom: 0.5rem;
-            line-height: 1;
-        }
-        h2 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #f7ff00;
-            border-left: 8px solid #ff00ff;
-            padding-left: 1rem;
-            margin: 2.5rem 0 1rem 0;
-        }
-        h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: #fff;
-            margin: 1.8rem 0 0.8rem 0;
-        }
-        h4 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #f7ff00;
-            margin: 1.2rem 0 0.4rem 0;
-        }
-        p {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-        /* links & phone */
-        a {
-            color: #ff00ff;
-            text-decoration: underline wavy #f7ff00;
-            transition: all 0.2s;
-        }
-        a:hover {
-            color: #f7ff00;
-            text-decoration: none;
-            background: #ff00ff;
-        }
-        a.phone-link {
-            display: inline-block;
-            background: #f7ff00;
-            color: #000;
-            font-weight: 700;
-            font-size: 1.3rem;
-            padding: 0.3rem 2rem;
-            text-decoration: none;
-            border: 3px solid #ff00ff;
-            margin: 0.5rem 0;
-        }
-        a.phone-link:hover {
-            background: #ff00ff;
-            color: #fff;
-            border-color: #f7ff00;
-        }
-        /* layout – asymmetric brutal */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        .section {
-            padding: 2rem 0;
-            border-bottom: 4px dashed #ff00ff;
-        }
-        .section:last-child {
-            border-bottom: none;
-        }
-        /* 카드 그리드 */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        .card {
-            background: #2a2a2a;
-            border: 3px solid #f7ff00;
-            padding: 1.5rem;
-            box-shadow: -8px 8px 0 #ff00ff;
-        }
-        .card h3 {
-            margin-top: 0;
-            font-size: 1.4rem;
-        }
-        .card ul {
-            list-style: none;
-            padding: 0;
-        }
-        .card li {
-            padding: 0.3rem 0;
-            border-bottom: 1px dotted #444;
-        }
-        .card li:before {
-            content: '▸ ';
-            color: #f7ff00;
-        }
-        /* 내비게이션 */
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem 1.5rem;
-            align-items: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 6px double #ff00ff;
-        }
-        nav a {
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #fff;
-            padding: 0.3rem 1rem;
-            border: 2px solid transparent;
-        }
-        nav a:hover {
-            border-color: #f7ff00;
-            background: none;
-            color: #f7ff00;
-        }
-        nav .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: #f7ff00;
-            text-decoration: none;
-            margin-right: auto;
-        }
-        /* 푸터 */
-        footer {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 4px solid #ff00ff;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #888;
-        }
-        footer a {
-            color: #f7ff00;
-        }
-        /* 반응형 */
-        @media (max-width: 768px) {
-            html { font-size: 15px; }
-            body { padding: 1rem; }
-            h1 { font-size: 2.6rem; }
-            h2 { font-size: 1.8rem; }
-            nav { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
-            .card-grid { grid-template-columns: 1fr; }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>가양 클럽 비교 — 상세 정보</title>
+  <meta name="description" content="가양 지역 클럽을 상세히 분석합니다. 입장 조건, 음악 장르, 인원 제한, 운영 시간 등 구체적인 항목을 기준으로 현장 경험을 풍부하게 전달합니다.">
+  <meta name="keywords" content="가양 클럽 상세, 클럽 정보, 가양 나이트라이프, 클럽 입장 조건, 클럽 운영시간">
+  <link rel="canonical" href="https://gayang-club-info.node-link.shop/about.html">
+  <meta property="og:title" content="가양 클럽 비교 — 상세 정보">
+  <meta property="og:description" content="가양 클럽의 세부 정보를 한눈에 살펴보고, 상황별 최적 선택을 도와드립니다.">
+  <meta property="og:url" content="https://gayang-club-info.node-link.shop/about.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- 내비게이션 -->
-        <nav>
-            <a href="/" class="logo">🍺 가양클럽비교</a>
-            <a href="/">홈</a>
-            <a href="/info">정보</a>
-            <a href="/location">위치</a>
-            <a href="/contact">문의</a>
-            <a href="tel:010-6279-0862" class="phone-link">📞 010-6279-0862</a>
-        </nav>
+  <header class="header">
+    <h1>가양 클럽 비교</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="/index.html">홈</a></li>
+        <li><a href="/clubs.html">클럽 리스트</a></li>
+        <li><a href="/compare.html">비교표</a></li>
+        <li><a href="/info.html">상세 정보</a></li>
+        <li><a href="/contact.html">문의</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
 
-        <!-- 메인 헤더 -->
-        <section class="section">
-            <h1>가양 클럽<br>정보 모음.zip</h1>
-            <p>야, 형이 직접 가양 클럽 5군데 다녀온 후기랑 상세 정보를 싹 모아왔다. 입장료는 얼마인지, 주차는 되는지, 드레스코드는 뭔지 — 진짜 가기 전에 알면 좋은 꿀팁만 쏙쏙 뽑았다. <strong>이거 보고 가면 후회 없다.</strong></p>
-            <p>궁금한 게 있으면 전화로 물어봐도 된다. 형이 아는 건 다 알려준다. <a href="tel:010-6279-0862" class="phone-link">010-6279-0862</a></p>
-        </section>
+  <main class="container">
+    <!-- 소개 섹션 -->
+    <section class="section">
+      <h2>가양 클럽 현장에 오신 것을 환영합니다</h2>
+      <p>가양은 최근 몇 년 사이에 다양한 음악 스타일과 분위기를 제공하는 클럽이 급증한 지역입니다. 이 페이지에서는 각 클럽이 제공하는 고유한 서비스와 방문 전 반드시 확인해야 할 요소들을 상세히 정리했습니다.</p>
+      <p>첫 발을 들여놓는 순간부터 마지막까지, 여러분이 어떤 목적과 시점에 있든 최적의 선택을 할 수 있도록 실제 운영 현장을 기준으로 정보를 풀어냈습니다. 체크리스트 형태로 제공되는 항목들은 현장에서 직접 체험한 듯한 직관적인 인사이트를 담고 있습니다.</p>
+    </section>
 
-        <!-- 클럽별 상세 정보 카드 섹션 -->
-        <section class="section">
-            <h2>🔥 클럽별 상세 스펙</h2>
-            <div class="card-grid">
-                <!-- 클럽 A: pulse -->
-                <div class="card">
-                    <h3>🔊 클럽 펄스 (Pulse)</h3>
-                    <ul>
-                        <li><strong>입장료:</strong> 평일 15,000원 / 주말 25,000원 (여성 할인 자주 함)</li>
-                        <li><strong>영업시간:</strong> 21:00 ~ 04:00 (주말 05:00까지)</li>
-                        <li><strong>주차:</strong> 자체 주차장 없음 / 근처 공영주차장 이용 (도보 3분)</li>
-                        <li><strong>드레스코드:</strong> 캐주얼 OK, 하지만 운동복이나 슬리퍼는 노노</li>
-                        <li><strong>음악 스타일:</strong> EDM, 일렉트로닉 위주 (간간히 힙합)</li>
-                        <li><strong>형의 한마디:</strong> 음악 크고 조명 격함. 젊은 층 많고 에너지 넘침. 주말엔 북적이니까 일찍 가는 게 좋음.</li>
-                    </ul>
-                </div>
-                <!-- 클럽 B: vinyl -->
-                <div class="card">
-                    <h3>🎧 비닐 라운지 (Vinyl Lounge)</h3>
-                    <ul>
-                        <li><strong>입장료:</strong> 평일 10,000원 / 주말 20,000원 (커버차지에 음료 1잔 포함)</li>
-                        <li><strong>영업시간:</strong> 20:00 ~ 02:00 (주말 03:00)</li>
-                        <li><strong>주차:</strong> 건물 지하주차장 2시간 무료 (매장 도장 필수)</li>
-                        <li><strong>드레스코드:</strong> 세미 포멀 (셔츠나 니트 추천)</li>
-                        <li><strong>음악 스타일:</strong> 재즈, 힙합, R&B 혼합 (라이브 세션도 있음)</li>
-                        <li><strong>형의 한마디:</strong> 분위기 좋고 사람들도 세련됨. 데이트나 조용히 술 마시면서 음악 즐기기 좋은 곳. 여긴 입장료에 음료 포함이라 알뜰함.</li>
-                    </ul>
-                </div>
-                <!-- 클럽 C: bassline -->
-                <div class="card">
-                    <h3>🎸 베이스라인 (Bassline)</h3>
-                    <ul>
-                        <li><strong>입장료:</strong> 평일 무료 (지인 추천 시) / 주말 20,000원</li>
-                        <li><strong>영업시간:</strong> 22:00 ~ 05:00 (24시 클럽)</li>
-                        <li><strong>주차:</strong> 건물 옆 노상주차장 (심야 시간 무료)</li>
-                        <li><strong>드레스코드:</strong> 자유 (올블랙 환영)</li>
-                        <li><strong>음악 스타일:</strong> 힙합, 트랩, 얼터너티브</li>
-                        <li><strong>형의 한마디:</strong> 여긴 좀 언더그라운드 감성. 입구가 좀 헷갈리는데 간판 보고 들어가면 됨. DJ 센스 끝내줘. 힙합 좋아하면 꼭 가봐.</li>
-                    </ul>
-                </div>
-                <!-- 클럽 D: aura -->
-                <div class="card">
-                    <h3>✨ 오라 (Aura)</h3>
-                    <ul>
-                        <li><strong>입장료:</strong> 평일 20,000원 / 주말 30,000원 (VIP 존 별도)</li>
-                        <li><strong>영업시간:</strong> 21:00 ~ 06:00</li>
-                        <li><strong>주차:</strong> 발렛 가능 (유료) / 인근 주차장 할인권 제공</li>
-                        <li><strong>드레스코드:</strong> 스마트 캐주얼 (운동화 금지)</li>
-                        <li><strong>음악 스타일:</strong> 하우스, 테크노, EDM</li>
-                        <li><strong>형의 한마디:</strong> 인테리어 미쳤음. 조명이랑 무대 연출이 예술이다. 하지만 입장료가 좀 비싸니까 지갑 단단히 챙겨. 그래도 가성비 나쁘지 않음.</li>
-                    </ul>
-                </div>
-                <!-- 클럽 E: attic -->
-                <div class="card">
-                    <h3>🏠 다락방 클럽 (Attic)</h3>
-                    <ul>
-                        <li><strong>입장료:</strong> 평일 5,000원 / 주말 15,000원 (여성 무료 이벤트 자주)</li>
-                        <li><strong>영업시간:</strong> 21:00 ~ 04:00 (수요일 휴무)</li>
-                        <li><strong>주차:</strong> 가게 협소, 앞에 2대 가능 / 주변 골목 주차 위험</li>
-                        <li><strong>드레스코드:</strong> 캐주얼 (편한 옷이 제일)</li>
-                        <li><strong>음악 스타일:</strong> 케이팝, 댄스, 올드팝 믹스</li>
-                        <li><strong>형의 한마디:</strong> 내 최애 클럽. 가격 착해서 부담 없고, 케이팝 틀어주니까 여자 친구도 좋아함. 인테리어는 좀 올드한데 그게 매력임. 진짜 가볍게 놀러 가기 최고.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <!-- 입장 조건 & 운영 시간 -->
+    <section class="section">
+      <h2>입장 조건과 운영 시간</h2>
+      <p>클럽마다 입장 연령, 복장 규정, 사전 예약 여부가 다릅니다. 예를 들어, 일부 클럽은 20세 이상만 입장 가능하고, 특정 테마 나이트는 복장 코드를 엄격히 적용합니다. 또한, 야간 운영 시간은 보통 오후 10시부터 새벽 4시까지이지만, 주말에만 연장되는 경우도 있으니 공식 홈페이지나 SNS 공지를 반드시 확인하세요.</p>
+      <p>운영 시간 외에도 프리오픈 이벤트나 파격적인 마감 할인 행사가 진행될 때가 있습니다. 이런 특수 시간대에는 입장 인원 제한이 완화되거나, 특별 게스트 DJ가 서프라이즈 공연을 선보이기도 합니다. 따라서 방문 전 일정을 미리 정리하고, 가능한 경우 사전 문의를 통해 최신 정보를 확보하는 것이 좋습니다.</p>
+    </section>
 
-        <!-- 입장료 비교 표 섹션 -->
-        <section class="section">
-            <h2>💰 입장료 비교 한눈에</h2>
-            <p>표로 보니까 더 확실하지?
+    <!-- 음악 장르 & 분위기 -->
+    <section class="section">
+      <h2>음악 장르와 분위기</h2>
+      <p>가양 클럽은 일렉트로, 힙합, 딥 하우스, 트라피컬 등 다양한 장르를 기반으로 운영됩니다. 특정 클럽은 매주 정해진 DJ가 직접 큐레이션한 플레이리스트를 제공해 고정 팬층을 확보하고, 또 다른 곳은 오픈 포맷을 채택해 방문객이 직접 플레이리스트에 참여할 수 있게 합니다.</p>
+      <p>분위기도 크게 차별화됩니다. 일부 클럽은 어두운 조명과 스모그 효과를 이용해 신비로운 분위기를 강조하고, 반면에 라이트 쇼와 대형 스크린을 활용해 시각적 몰입감을 높이는 경우도 있습니다. 이런 차이는 파티 목적에 따라 선택 기준이 되므로, 자신이 원하는 파티 스타일을 먼저 정의한 뒤 해당 클럽을 방문하는 것이 효율적입니다.</p>
+    </section>
+
+    <!-- 인원 제한 & 예약 시스템 -->
+    <section class="section">
+      <h2>인원 제한과 예약 시스템</h2>
+      <p>많은 클럽이 일일 최대 수용 인원을 공개하고 있으며, 이벤트 당일 현장 입장은 순서대로 진행됩니다. 인기 클럽은 사전 예약 시스템을 도입해 인원 초과를 방지하고, 예약 시 할인 혜택을 제공하기도 합니다. 예약은 모바일 앱이나 웹사이트를 통해 간편히 진행할 수 있습니다.</p>
+      <p>예약 취소 정책도 클럽마다 상이합니다. 일부는 24시간 전까지 전액 환불을 보장하고, 다른 곳은 환불이 불가한 ‘노 프리미엄’ 티켓을 판매합니다. 따라서 미리 예약 조건을 확인하고, 일정 변동 가능성을 대비해 유연한 티켓 옵션을 선택하는 것이 현명합니다.</p>
+    </section>
+
+    <!-- 상황별 선택 가이드 -->
+    <section class="section">
+      <h2>상황별 클럽 선택 가이드</h2>
+      <p>① <strong>친구와 함께 즐기는 파티</strong> – 인원 제한이 넉넉하고, 음악 장르가 다양하게 믹스된 클럽을 추천합니다. 사전 예약 없이도 입장이 가능하지만, 혼잡 시 입장 대기시간이 길어질 수 있습니다.</p>
+      <p>② <strong>첫 데이트 코스</strong> – 분위기가 로맨틱하고, 조용한 라운지 형태의 클럽을 선택하세요. 대부분 예약제이며, 미리 좌석을 확보하면 보다 편안한 분위기를 즐길 수 있습니다.</p>
+      <p>③ <strong>전문 DJ 파티</strong> – 특정 DJ가 참여하는 이벤트는 티켓 판매가 빠르게 마감됩니다. 공식 SNS와 웹사이트를 주시하고, 티켓 오픈 즉시 예매하는 것이 필수입니다.</p>
+      <p>④ <strong>새벽까지 연속 파티</strong> – 운영 시간이 연장되는 ‘나이트 오픈’ 클럽을 찾아보세요. 보통 입장 인원 제한이 낮아, 새벽 3시까지도 비교적 여유롭게 즐길 수 있습니다.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h2>자주 묻는 질문</h2>
+      <h3>Q1. 클럽 입장 시 신분증은 반드시 필요하나요?</h3>
+      <p>네, 대부분의 클럽은 연령 확인을 위해 신분증(주민등록증, 운전면허증, 여권 등)을 필수로 요구합니다. 특히 20세 미만 입장은 금지되는 경우가 많으니, 반드시 지참해 주세요.</p>
+      <h3>Q2. 현금과 카드 중 어떤 결제 수단이 더 편리한가요?</h3>
+      <p>대부분 클럽은 현금 및 카드 결제를 모두 받지만, 일부는 모바일 결제 전용 시스템을 운영합니다. 사전 결제 옵션을 확인하고, 현장에서는 카드 사용을 권장합니다.</p>
+      <h3>Q3. 클럽 내부에서 촬영은 허용되나요?</h3>
+      <p>일반적으로 클럽 내부에서 영상 촬영은 금지됩니다. 다만, 공식 이벤트나 인증샷이 가능한 구역이 지정된 경우는 예외이며, 사전 안내를 반드시 확인해야 합니다.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 가양 클럽 정보. 모든 권리 보유.</p>
+  </footer>
+
+  <script>
+    // 기존 사이트에 포함된 네비게이션 토글 스크립트는 그대로 유지됩니다.
+    const hamburger = document.querySelector('.hamburger');
+    const navUl = document.querySelector('nav ul');
+    hamburger.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
